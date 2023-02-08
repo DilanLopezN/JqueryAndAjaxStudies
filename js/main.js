@@ -4,7 +4,9 @@ function consultaCep() {
     url: `https://viacep.com.br/ws/${inputValue}/json/`,
     type: 'GET',
     success: function (response) {
-      console.log(response)
+      $('#log').text(response.logradouro)
+      $('#bairro').text(response.bairro)
+      $('#cidade').text(response.localidade)
     }
   })
 }

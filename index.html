@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="js/jquery-3.6.3.min.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <label for="text">Insira seu CEP: </label>
-    <input type="text" id="textId" />
-    <button type="button" onclick="consultaCep()">Consultar cep</button>
+    <div id="searchContent">
+      <label for="text">Insira um CEP: </label>
+      <input type="text" id="textId" />
+      <button type="button" onclick="consultaCep()">Consultar cep</button>
+    </div>
 
+    <div id="listContet">
+      <ul>
+        <li id="log"></li>
+        <li id="bairro"></li>
+        <li id="cidade"></li>
+      </ul>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
